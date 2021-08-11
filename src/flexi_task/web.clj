@@ -18,7 +18,7 @@
       {:status 400 :body {:errors validation-errors :answer false}})))
 
 (defroutes app-routes
-  "Application REST API routes definition"
+  "Application Web and REST API routes definition"
   (GET "/" [] (index-page))
   (POST "/scramble" req (scramble-handler req))
   (route/resources "/")
